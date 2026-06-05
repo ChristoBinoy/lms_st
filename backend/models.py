@@ -20,7 +20,7 @@ class Lead(Base):
 
 
     # 2. Pipeline State Management [cite: 6]
-    pipeline_stage = Column(String, nullable=False, default="New") # New -> Contacted -> Interested -> Negotiating -> Closed/Lost
+    pipeline_stage = Column(String, nullable=False, default="Discovered") # New -> Contacted -> Interested -> Negotiating -> Closed/Lost
     lead_score = Column(Integer, nullable=False, default=0)
 
 
